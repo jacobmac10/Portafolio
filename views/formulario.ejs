@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    
+</head>
+<body>
+    <form
+  id="app"
+  @submit="checkForm"
+  action="https://submit-form.com/gxeLpyH-I2wolOWPEYowi" 
+  method="post"
+  novalidate="true"
+>
+
+    
+
+  <p v-if="errors.length">
+    <b></b>
+    
+  </p>
+
+  <p>
+    <label for="name">Name</label>
+    <input
+      id="name"
+      v-model="name"
+      type="text"
+      name="name"
+    >
+  </p>
+
+  <p>
+    <label for="email">Email</label>
+    <input
+      id="email"
+      v-model="email"
+      type="email"
+      name="email"
+      class="form-group"
+    >
+  </p>
+
+
+
+  <p>
+    <button class="btn btn-primary">Submit</button>
+    
+    
+  </p>
+
+
+</form>
+</body>
+</html>
